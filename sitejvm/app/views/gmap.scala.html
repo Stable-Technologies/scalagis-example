@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>FoodStops</title>
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/mobile.css")" />
+    <script src="@routes.WebJarAssets.at(WebJarAssets.locate("modernizr.js"))"></script>
+</head>
+<body>
+<div class="row">
+    <div class="large-12 columns">
+        <h1>LOLMAPS</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="large-12 columns">
+        <div class="panel">
+            <div id="gmap"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzgnVgaZkzsBQcCAdaxKJ2ckqruTvyj4g"></script>
+<script src="@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))"></script>
+<script src="@routes.WebJarAssets.at(WebJarAssets.locate("js/foundation.min.js"))"></script>
+<script src="@routes.Assets.at("javascripts/scalajs-example-fastopt.js")"></script>
+<script>
+    $(document).foundation();
+    GoogleMap().render("gmap");
+</script>
+    </body>
+</html>
